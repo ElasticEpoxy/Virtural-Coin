@@ -9,43 +9,26 @@ function randomNumber() {
 function logRandomNumber() {
 
     var randNum = randomNumber();
-
-    if(randNum == 7) { 
-
-        console.log('You have a coin now Hash #1');
-
-    }
-    if(randNum == 23) { 
-
-        console.log('You have a coin now Hash #2');
-
-    }
-    if(randNum == 25) { 
-
-        console.log('You have a coin now Hash #3');
-
-    }
-    if(randNum == 42) { 
-
-        console.log('You have a coin now Hash #4');
-
-    }
-    if(randNum == 31) { 
-
-        console.log('You have a coin now Hash #5');
-
-    }
-    if(randNum == 41) { 
-
-        console.log('You have a coin now Hash #6');
-
-    }
-    if(randNum == 12) { 
-
-        console.log('You have a coin now Hash #7');
-
-    }
     
+    
+    switch(randNum)
+    {
+        case 7:
+            console.log('You have a coin now Hash #1');
+            break;
+        case 23:
+            console.log('You have a coin now Hash #2');
+            break;
+        case 25:
+            console.log('You have a coin now Hash #3');
+            break;
+        case 42:
+            console.log('You got the best number.');
+            break;
+        default:
+            console.log('No soup for you!');
+            break;
+    }
 
 }
 
